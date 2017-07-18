@@ -1,5 +1,6 @@
 ﻿namespace Firebase.Database.Tests.Entities
 {
+    using System.Collections.Generic;
     using Newtonsoft.Json;
 
     public class Dinosaur

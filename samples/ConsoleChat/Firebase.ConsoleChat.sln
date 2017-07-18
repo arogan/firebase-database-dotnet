@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleChat", "ConsoleChat\ConsoleChat.csproj", "{18224765-6438-4D4C-8432-D29ED0AA45B4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Firebase", "..\..\src\Firebase\Firebase.csproj", "{B4BC9BE6-9746-476D-96F9-1B09AC4C32CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{18224765-6438-4D4C-8432-D29ED0AA45B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18224765-6438-4D4C-8432-D29ED0AA45B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18224765-6438-4D4C-8432-D29ED0AA45B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4BC9BE6-9746-476D-96F9-1B09AC4C32CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4BC9BE6-9746-476D-96F9-1B09AC4C32CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4BC9BE6-9746-476D-96F9-1B09AC4C32CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4BC9BE6-9746-476D-96F9-1B09AC4C32CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
