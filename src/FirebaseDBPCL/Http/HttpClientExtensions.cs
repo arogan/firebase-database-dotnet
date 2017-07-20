@@ -35,7 +35,21 @@ namespace Firebase.Database.Http
 
                 response.EnsureSuccessStatusCode();
 
-                var dictionary = JsonConvert.DeserializeObject<Dictionary<string, T>>(responseData);
+                Dictionary<string, T> dictionary;
+                if (!string.IsNullOrWhiteSpace(responseData) && responseData.StartsWith("["))
+                {
+                    //we got an array which means the collection was using numeric index key
+                    var listResult = JsonConvert.DeserializeObject<List<T>>(responseData);
+                    dictionary = new Dictionary<string, T>();
+                    int cnt = 0;
+                    foreach (var i in listResult)
+                    {
+                        dictionary.Add(cnt.ToString(), i);
+                        cnt++;
+                    }
+                }
+                else
+                    dictionary = JsonConvert.DeserializeObject<Dictionary<string, T>>(responseData);
 
                 if (dictionary == null)
                 {
